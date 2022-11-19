@@ -85,3 +85,30 @@
     color: #343A40;
 }
 
+.empty-list-text {
+    font-weight: 700;
+    font-size: 22px;
+    color: #343A40;
+}
+
+@media (max-width: 1000px) {
+    .financial-summary-container {
+        width: 450px;
+    }
+}
+
+@media (max-width: 930px) {
+    .financial-summary-container {
+        width: 100%;
+    }
+}
+
+@media (max-width: 500px) {
+    .filter-container {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    .filter-container > h3 {
+        margin-bottom: 20px;
+    }
+}

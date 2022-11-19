@@ -2,6 +2,7 @@ import './styles.css';
 
 import { Button } from '../Button';
 
+import noCard from '../../assets/NoCard.svg'
 import imgBinDefault from '../../assets/img_bin_default.svg';
 import imgBinHover from '../../assets/img_bin_hover.svg';
 
@@ -20,21 +21,30 @@ export function FinancialSummary({financialList, setFilter, removeItem}) {
             </div>
 
             <ul className='financial-summary-list'>
-                {financialList.map((item, index) => (
-                    <li key={index} className={item.valueType === 'Entrada' ? 'financial-summary-item' : 'financial-summary-item financial-summary-item-expense'}>
-                        <div>
-                            <p>{item.description}</p>
-
+                {financialList.length > 0 ? 
+                    financialList.map((item, index) => (
+                        <li key={index} className={item.valueType === 'Entrada' ? 'financial-summary-item' : 'financial-summary-item financial-summary-item-expense'}>
                             <div>
-                                <span>R${item.value}</span>
+                                <p>{item.description}</p>
 
-                                <button className='btn-bin'><img src={imgBinDefault} alt="Botão apagar" onClick={() => removeItem(item.description)}/></button>
+                                <div>
+                                    <span>R${item.value}</span>
+
+                                    <button className='btn-bin'><img src={imgBinDefault} alt="Botão apagar" onClick={() => removeItem(item.description)}/></button>
+                                </div>
                             </div>
-                        </div>
 
-                        <span>{item.valueType}</span>
-                    </li>
-                ))}
+                            <span>{item.valueType}</span>
+                        </li>
+                    ))
+                    :
+                        <>
+                            <p className='empty-list-text'>Você ainda não possui nenhuma lançamento</p>
+
+                            <img src={noCard} alt="Sem lançamentos" />
+                        </> 
+                }
+                
             </ul>
         </section>
     )

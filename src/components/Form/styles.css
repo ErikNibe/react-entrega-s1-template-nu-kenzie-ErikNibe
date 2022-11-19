@@ -125,3 +125,9 @@ select:focus {
     background-color: #E34981;
     color: #F8F9FA;
 }
+
+@media (max-width: 500px) {
+    .form-container{
+        width: 100%;
+    }
+}   

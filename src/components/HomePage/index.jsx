@@ -31,16 +31,20 @@ export function HomePage({handleIndexPage}) {
     return (
         <>
             <header className='header-container'>
-                <img src={logoHomePage} alt="" />
+                <div>
+                    <img src={logoHomePage} alt="" />
 
-                <Button text={'Inicio'} handleIndexPage={handleIndexPage}/>
+                    <Button text={'Inicio'} handleIndexPage={handleIndexPage}/>
+                </div>
             </header>
 
             <main className='main-container'>
-                <section>
+                <section className='financial-container'>
                     <Form setFinancialList={setFinancialList}/>
                     
-                    <TotalValue financialList={filteredList}/>
+                    {financialList.length > 0 &&
+                        <TotalValue financialList={filteredList}/>   
+                    }
                 </section>
                
                 <FinancialSummary financialList={filteredList} setFilter={setFilter} removeItem={removeItem}/>
