@@ -1,0 +1,87 @@
+.financial-summary-container {
+    width: 560px;
+}
+
+.filter-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 24px;
+}
+
+.filter-container > div {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+
+.financial-summary-list {
+    list-style: none;
+
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.financial-summary-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    height: 87px;
+    padding: 18px 18px;
+
+    border-left: 4px solid #03B898;
+    border-radius: 4px;
+
+    background-color: #F8F9FA;
+}
+
+.financial-summary-item-expense {
+    border-left: 4px solid #E9ECEF;
+}
+
+.financial-summary-item > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.financial-summary-item > div > p {
+    font-weight: 700;
+    font-size: 16px;
+    color: #212529;
+}
+
+.financial-summary-item > div > div > span {
+    font-weight: 400;
+    font-size: 12px;
+    color: #212529;
+}
+
+.financial-summary-item > div > div {
+    display: flex;
+    gap: 50px;
+}
+
+.btn-bin {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 22px;
+    height: 22px;
+
+    border: none;
+
+    background: none;
+
+    cursor: pointer;
+}
+
+.financial-summary-item > span {
+    font-weight: 400;
+    font-size: 12px;
+    color: #343A40;
+}
+

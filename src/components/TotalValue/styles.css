@@ -1,0 +1,36 @@
+.total-value-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    width: 363px;
+    height: 96px;
+    padding: 20px 24px;
+
+    border: 1px solid #E9ECEF;
+    border-radius: 4px;
+}
+
+.total-value-container > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.total-value-container > div > p {
+    font-weight: 700;
+    font-size: 16px;
+    color: #212529;
+}
+
+.total-value-container > div > span {
+    font-weight: 700;
+    font-size: 16px;
+    color: #FD377E;
+}
+
+.total-value-container > span {
+    font-weight: 400;
+    font-size: 12px;
+    color: #343A40;
+}

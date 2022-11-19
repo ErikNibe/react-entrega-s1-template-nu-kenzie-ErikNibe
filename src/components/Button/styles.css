@@ -1,0 +1,25 @@
+.button-container {
+    height: 40px;
+    padding: 10.5px 15px;
+
+    border: none;
+    border-radius: 8px;
+
+    background-color: #E9ECEF;
+
+    font-weight: 600;
+    font-size: 14px;
+    color: #343A40;
+
+    cursor: pointer;
+}
+
+.button-container:hover {
+    background-color: #212529;
+    color: #F8F9FA;
+}
+
+.btn-filter:focus {
+    background-color: #FD377E;
+    color: #ffffff;
+}

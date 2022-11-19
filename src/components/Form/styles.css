@@ -1,0 +1,127 @@
+.form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 19px;
+
+    width: 363px;
+    height: 351px;
+    padding: 38px 24.5px;
+
+    border: 1px solid #E9ECEF;
+    border-radius: 4px;
+
+    margin-bottom: 16px;
+}
+
+.label-text {
+    font-weight: 400;
+    font-size: 12px;
+    color: #212529;
+}
+
+.input-description-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-description-container > input {
+    margin-top: 12px;
+
+    height: 52px;
+    padding: 0 16px;
+
+    border: none;
+    border-radius: 8px;
+
+    font-weight: 400;
+    font-size: 16px;
+
+    background-color: #F8F9FA;
+}
+
+input:focus {
+    outline: 2px solid #212529;
+}
+
+.input-description-container > span {
+    font-weight: 400;
+    font-size: 12px;
+    color: #868E96;
+}
+
+.inputs-value-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.inputs-value-container div {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+
+.input-value-container {
+    position: relative;
+}
+
+.money-icon {
+    position: absolute;
+    right: 10px;
+    top: 14px;
+}
+
+.inputs-value-container > div > div > input {
+    width: 128px;
+    height: 48px;
+    padding: 0 16px;
+
+    border: none;
+    border-radius: 8px;
+
+    background-color: #F8F9FA;
+
+    font-weight: 400;
+    font-size: 16px;
+    color: #868E96;
+}
+
+.inputs-value-container > div > select {
+    width: 150px;
+    height: 48px;
+    padding: 0 16px;
+
+    border: none;
+    border-radius: 8px;
+
+    background-color: #F8F9FA;
+
+    font-weight: 400;
+    font-size: 12px;
+    color: #343A40;
+}
+
+select:focus {
+    outline: 2px solid #212529;
+}
+
+.btn-insert-value {
+    height: 48px;
+    padding: 13px 20px;
+
+    border: none;
+    border-radius: 8px;
+
+    background-color: #FD377E;
+
+    font-weight: 500;
+    font-size: 16px;
+    color: #FFFFFF;
+
+    cursor: pointer;
+}
+
+.btn-insert-value:hover {
+    background-color: #E34981;
+    color: #F8F9FA;
+}
