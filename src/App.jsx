@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import './App.css';
-import { HomePage } from './components/homePage';
 
+import { HomePage } from './components/HomePage';
 import { IndexPage } from './components/IndexPage';
 
 
