@@ -131,3 +131,17 @@ select:focus {
         width: 100%;
     }
 }   
+
+@media (max-width: 350px) {
+    .inputs-value-container {
+        flex-direction: column;
+    }
+
+    .inputs-value-container > div > div > input {
+        width: 100%;
+    } 
+
+    .inputs-value-container > div > select {
+        width: 100%;
+    }
+}
